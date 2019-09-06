@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Monkee</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="page">
+  <div class="page__inner">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-none d-lg-block d-xl-block col-lg-8">
+          <nav class="menu">
+            <a href="#" class="brand-logo">
+              <img src="/assets/Logo.png" alt="brand-logo__img" class="menu__logo" />
+            </a>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">people</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">stats</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">messages</a>
+                <span class="counter menu__counter">17</span>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">tasks</a>
+                <span class="counter menu__counter">35</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav class="account-menu">
+            <div class="profile">
+              <img src="assets/team_monkee.png" alt="profile-img" class="profile__img" />
+              <span class="profile__name">monkee</span>
+            </div>
+            <div class="hamburger account-menu__hamburger"></div>
+          </nav>
+        </div>
+      </div>
+      <main class="main">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <section class="heading">
+              <h1 class="heading__title">
+                HELLO MONKEE, <br />HOW ARE YOU <br />TODAY?
+              </h1>
+            </section>
+            <section class="daily-overview">
+              <div class="daily-overview__overview">
+                <figure class="daily-overview__img-figure">
+                  <img src="assets/tasks.png" alt="daily-overview-img" class="daily-overview__img" />
+                  <span class="counter daily-overview__counter">23</span>
+                </figure>
+                <span class="daily-overview__name">tasks</span>
+              </div>
+              <div class="daily-overview__overview">
+                <figure class="daily-overview__img-figure">
+                  <img src="/assets/messages.png" alt="daily-overview-img" class="daily-overview__img" />
+                  <span class="counter daily-overview__counter">17</span>
+                </figure>
+                <span class="daily-overview__name">messages</span>
+              </div>
+            </section>
+            <section class="projects-overview">
+              <div class="projects-overview__overview">
+                <img src="/assets/team_ante.png" alt="projects-overview-img" class="projects-overview__img" />
+                <span class="projects-overview__name">Working on Pixelytics</span>
+                <span class="projects-overview__progress-bar"></span>
+              </div>
+              <div class="projects-overview__overview">
+                <img src="/assets/team_matija_2.png" alt="projects-overview-img" class="projects-overview__img" />
+                <span class="projects-overview__name">Working on MegaBlast</span>
+                <span class="projects-overview__progress-bar"></span>
+              </div>
+            </section>
+            <nav class="dot-nav main__dot-nav">
+              <ul class="dot-nav__dot-list">
+                <ul class="dot-nav__dot dot-nav__dot--active"></ul>
+                <ul class="dot-nav__dot"></ul>
+                <ul class="dot-nav__dot"></ul>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-12 col-lg-6 ">
+            <section class="day">
+              <div class="calendar day__calendar">
+                <span class="calendar__current-day">27</span>
+                <span class="calendar__month">may</span>
+                <ul class="calendar__days">
+                  <li class="calendar__day">1</li>
+                  <li class="calendar__day">2</li>
+                  <li class="calendar__day">3</li>
+                  <li class="calendar__day">4</li>
+                  <li class="calendar__day">5</li>
+                  <li class="calendar__day">6</li>
+                  <li class="calendar__day">7</li>
+                  <li class="calendar__day">8</li>
+                  <li class="calendar__day">9</li>
+                  <li class="calendar__day">10</li>
+                  <li class="calendar__day">11</li>
+                  <li class="calendar__day">12</li>
+                  <li class="calendar__day">13</li>
+                  <li class="calendar__day">14</li>
+                  <li class="calendar__day">15</li>
+                  <li class="calendar__day">16</li>
+                  <li class="calendar__day">17</li>
+                  <li class="calendar__day">18</li>
+                  <li class="calendar__day">19</li>
+                  <li class="calendar__day">20</li>
+                  <li class="calendar__day">21</li>
+                  <li class="calendar__day">22</li>
+                  <li class="calendar__day">23</li>
+                  <li class="calendar__day">24</li>
+                  <li class="calendar__day">25</li>
+                  <li class="calendar__day">26</li>
+                  <li class="calendar__day calendar__day--current">27</li>
+                  <li class="calendar__day">28</li>
+                  <li class="calendar__day">29</li>
+                  <li class="calendar__day">30</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <span class="footer__info">DAILY OVERVIEW POWERED BY
+              <b class="text--important">UNIFIED ANALYTICS</b>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="bg-rect"></div>
+</body>
+
+</html>

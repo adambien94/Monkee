@@ -1,0 +1,40 @@
+.page {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  background: rgba(0, 0, 0, 0.05);
+  background: url('/assets/bg.png');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  &__inner {
+    max-width: calc(1114px + 30px + 90px);
+    padding: 85px 45px 0 45px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+.text--important {
+  font-weight: $font-bold;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 991px) {
+  .page {
+    background-size: 200% 100%;
+    background-position: right top;
+
+    &__inner {
+      max-width: none;
+      padding: 35px 5px 0 5px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .page {
+    background-size: 2000% 360%;
+  }
+}

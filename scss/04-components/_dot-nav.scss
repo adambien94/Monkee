@@ -1,0 +1,19 @@
+.dot-nav {
+  &__dot-list {
+    width: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #dedede;
+    cursor: pointer;
+  }
+
+  &__dot--active {
+    background: $color-primary;
+  }
+}

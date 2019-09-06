@@ -1,0 +1,12 @@
+.hamburger {
+  width: 24px;
+  height: 9px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-top: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+}
+
+.account-menu__hamburger {
+  margin: auto 0;
+}

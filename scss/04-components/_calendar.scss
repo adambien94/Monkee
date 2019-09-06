@@ -1,0 +1,125 @@
+.calendar {
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110%;
+  }
+
+  &::before {
+    background-image: url('/assets/bg.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+    background: $color-dark-gray;
+    opacity: 0.92;
+    z-index: -1;
+  }
+
+  &__current-day {
+    font-size: 140px;
+    font-weight: $font-bold;
+    line-height: 140px;
+    color: $color-primary;
+    display: block;
+    text-align: center;
+  }
+
+  &__month {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: $font-bold;
+    line-height: 38px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 23px;
+  }
+
+  &__days {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    padding: 0 20px 14px 20px;
+  }
+
+  &__day {
+    display: block;
+    width: calc(100% / 7);
+    text-align: center;
+    font-size: $base-font-size;
+    font-weight: $font-bold;
+    line-height: 18px;
+    color: $color-primary;
+    margin-bottom: 22px;
+  }
+
+  &__day--current {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__day--current:before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: $color-primary;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__day:first-child {
+    margin-left: calc(100% / 7 * 2);
+  }
+}
+
+
+.day__calendar {
+  margin-left: 18%;
+  margin-top: 11px;
+}
+
+
+@media (max-width: 991px) {
+  .calendar::before {
+    background-size: 200% 100%;
+    background-position: right top;
+  }
+
+  .day__calendar {
+    margin: 90px auto;
+  }
+
+}
+
+
+@media (max-width: 540px) {
+  .calendar {
+    width: 95%;
+
+    &:before {
+      background-size: 2000% 360%;
+    }
+  }
+}

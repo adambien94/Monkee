@@ -1,0 +1,140 @@
+.main {
+  margin-top: 26px;
+  padding-bottom: 52px;
+}
+
+
+.heading {
+  &__title {
+    font-size: 64px;
+    font-weight: $font-extra-bold;
+    line-height: 64px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(174deg, $color-primary 0%, #2046d1 100%);
+  }
+}
+
+
+.daily-overview {
+  margin-top: 86px;
+  display: flex;
+
+  &__overview {
+    margin-right: 187px;
+    position: relative;
+  }
+
+  &__img-figure {
+    width: 64px;
+    height: 64px;
+    background: $color-dark-gray;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: $font-extra-bold;
+    line-height: $base-line-height;
+    color: $color-dark-gray;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 82px;
+  }
+
+  &__counter {
+    display: block;
+    line-height: 29px;
+    width: 29px;
+    height: 29px;
+    font-size: $base-font-size;
+    box-sizing: content-box;
+    border: 2px solid #ffffff;
+    background: $color-primary;
+    position: absolute;
+    right: -9px;
+    top: -7px;
+  }
+}
+
+
+.projects-overview {
+  margin: 70px 0 77px 0;
+
+  &__overview {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-top: 2px;
+  }
+
+  &__name {
+    font-size: $base-font-size;
+    color: $color-dark-gray;
+    top: 0;
+    line-height: $base-line-height;
+  }
+
+  &__name,
+  &__progress-bar {
+    position: absolute;
+    display: block;
+    left: 43px;
+  }
+
+  &__progress-bar {
+    height: 4px;
+    width: 155px;
+    background: #d7dbe8;
+    top: 20px;
+  }
+
+  &__overview:nth-child(1) &__progress-bar:after,
+  &__overview:nth-child(2) &__progress-bar:after {
+    content: "";
+    display: block;
+    height: 100%;
+    background: $color-primary;
+  }
+
+  &__overview:nth-child(1) &__progress-bar:after {
+    width: 78px;
+  }
+
+  &__overview:nth-child(2) &__progress-bar:after {
+    width: 113px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .daily-overview {
+    display: block;
+
+    &__overview {
+      margin: 30px 0 0 0;
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+.profile {
+  margin-right: 36px;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    color: #4268f3;
+    font-size: $base-font-size;
+  }
+}
