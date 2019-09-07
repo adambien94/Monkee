@@ -8,7 +8,7 @@
 
   &__inner {
     max-width: calc(1114px + 30px + 90px);
-    padding: 85px 45px 0 45px;
+    padding: 85px $page-vertical-padding 0 $page-vertical-padding;
     min-height: 100vh;
     margin: 0 auto;
     position: relative;
