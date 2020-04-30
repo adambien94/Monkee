@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@iconfu/svg-inject": "^1.2.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "serve": "^11.1.0"
   }
 }
